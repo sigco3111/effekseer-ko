@@ -1,0 +1,327 @@
+{
+	"mode": "browser",
+	"block": {
+		"controls": [
+			{
+				"id": "effect",
+				"label": "Effect",
+				"hint": "Which effect plays. Click the floor in the frame to cast it there.",
+				"type": "choice",
+				"options": [
+					{
+						"value": "fireball",
+						"label": "파이어볼",
+						"group": "불",
+						"image": "thumbs/effects/fireball.webp"
+					},
+					{
+						"value": "flame-ring",
+						"label": "화염 고리",
+						"group": "불",
+						"image": "thumbs/effects/flame-ring.webp"
+					},
+					{
+						"value": "fire-burst",
+						"label": "화염 폭발",
+						"group": "불",
+						"image": "thumbs/effects/fire-burst.webp"
+					},
+					{
+						"value": "falling-ember",
+						"label": "낙하하는 불티",
+						"group": "불",
+						"image": "thumbs/effects/falling-ember.webp"
+					},
+					{
+						"value": "water-burst",
+						"label": "물 폭발",
+						"group": "물·얼음",
+						"image": "thumbs/effects/water-burst.webp"
+					},
+					{
+						"value": "water-spout",
+						"label": "물기둥",
+						"group": "물·얼음",
+						"image": "thumbs/effects/water-spout.webp"
+					},
+					{
+						"value": "frost-fall",
+						"label": "서리 낙하",
+						"group": "물·얼음",
+						"image": "thumbs/effects/frost-fall.webp"
+					},
+					{
+						"value": "cold-mist",
+						"label": "냉기 안개",
+						"group": "물·얼음",
+						"image": "thumbs/effects/cold-mist.webp"
+					},
+					{
+						"value": "tornado",
+						"label": "토네이도",
+						"group": "물·얼음",
+						"image": "thumbs/effects/tornado.webp"
+					},
+					{
+						"value": "lightning-strike",
+						"label": "낙뢰",
+						"group": "번개",
+						"image": "thumbs/effects/lightning-strike.webp"
+					},
+					{
+						"value": "thunderbolt",
+						"label": "벼락",
+						"group": "번개",
+						"image": "thumbs/effects/thunderbolt.webp"
+					},
+					{
+						"value": "storm-orb",
+						"label": "폭풍 구체",
+						"group": "번개",
+						"image": "thumbs/effects/storm-orb.webp"
+					},
+					{
+						"value": "ember-blade",
+						"label": "화염검",
+						"group": "검",
+						"image": "thumbs/effects/ember-blade.webp"
+					},
+					{
+						"value": "moonlight-blade",
+						"label": "월광검",
+						"group": "검",
+						"image": "thumbs/effects/moonlight-blade.webp"
+					},
+					{
+						"value": "sacred-blade",
+						"label": "성광검",
+						"group": "검",
+						"image": "thumbs/effects/sacred-blade.webp"
+					},
+					{
+						"value": "crescent-slash",
+						"label": "초승달 베기",
+						"group": "검",
+						"image": "thumbs/effects/crescent-slash.webp"
+					},
+					{
+						"value": "golden-cuts",
+						"label": "황금 연속 베기",
+						"group": "검",
+						"image": "thumbs/effects/golden-cuts.webp"
+					},
+					{
+						"value": "benediction",
+						"label": "축복",
+						"group": "회복·신성",
+						"image": "thumbs/effects/benediction.webp"
+					},
+					{
+						"value": "healing-light",
+						"label": "치유의 빛",
+						"group": "회복·신성",
+						"image": "thumbs/effects/healing-light.webp"
+					},
+					{
+						"value": "golden-rise",
+						"label": "황금 상승",
+						"group": "회복·신성",
+						"image": "thumbs/effects/golden-rise.webp"
+					},
+					{
+						"value": "power-up",
+						"label": "파워 업",
+						"group": "회복·신성",
+						"image": "thumbs/effects/power-up.webp"
+					},
+					{
+						"value": "blood-lance",
+						"label": "피의 창",
+						"group": "어둠",
+						"image": "thumbs/effects/blood-lance.webp"
+					},
+					{
+						"value": "phantasm-rain",
+						"label": "환영 운석우",
+						"group": "어둠",
+						"image": "thumbs/effects/phantasm-rain.webp"
+					},
+					{
+						"value": "phantasm",
+						"label": "환영 운석",
+						"group": "어둠",
+						"image": "thumbs/effects/phantasm.webp"
+					},
+					{
+						"value": "herald",
+						"label": "전령",
+						"group": "어둠",
+						"image": "thumbs/effects/herald.webp"
+					},
+					{
+						"value": "toxic-aura",
+						"label": "맹독 오라",
+						"group": "어둠",
+						"image": "thumbs/effects/toxic-aura.webp"
+					},
+					{
+						"value": "hex-shield",
+						"label": "마법진 보호막",
+						"group": "보호막",
+						"image": "thumbs/effects/hex-shield.webp"
+					},
+					{
+						"value": "red-shield",
+						"label": "붉은 보호막",
+						"group": "보호막",
+						"image": "thumbs/effects/red-shield.webp"
+					},
+					{
+						"value": "molten-shield",
+						"label": "용암 보호막",
+						"group": "보호막",
+						"image": "thumbs/effects/molten-shield.webp"
+					},
+					{
+						"value": "spark-hit",
+						"label": "스파크 타격",
+						"group": "타격",
+						"image": "thumbs/effects/spark-hit.webp"
+					},
+					{
+						"value": "red-hit",
+						"label": "붉은 타격",
+						"group": "타격",
+						"image": "thumbs/effects/red-hit.webp"
+					},
+					{
+						"value": "shockwave",
+						"label": "충격파",
+						"group": "타격",
+						"image": "thumbs/effects/shockwave.webp"
+					},
+					{
+						"value": "feather-burst",
+						"label": "깃털 폭발",
+						"group": "타격",
+						"image": "thumbs/effects/feather-burst.webp"
+					}
+				],
+				"default": "golden-rise",
+				"essential": true
+			},
+			{
+				"id": "size",
+				"label": "Size",
+				"hint": "How big it plays.",
+				"type": "number",
+				"min": 0.4,
+				"max": 2.5,
+				"step": 0.05,
+				"default": 1,
+				"unit": "×",
+				"essential": true
+			},
+			{
+				"id": "speed",
+				"label": "Speed",
+				"hint": "How fast it plays: 1 is as made.",
+				"type": "number",
+				"min": 0.2,
+				"max": 2,
+				"step": 0.05,
+				"default": 1,
+				"unit": "×",
+				"essential": true
+			},
+			{
+				"id": "colour",
+				"label": "Colour",
+				"hint": "Turns its colours around the wheel: 0 is as made.",
+				"type": "number",
+				"min": 0,
+				"max": 360,
+				"step": 5,
+				"default": 0,
+				"unit": "°",
+				"essential": true
+			},
+			{
+				"id": "auto",
+				"label": "Keep casting",
+				"hint": "Casts it again in the middle whenever it has finished.",
+				"type": "toggle",
+				"default": true,
+				"essential": true
+			},
+			{
+				"id": "glow",
+				"label": "Glow",
+				"hint": "How much the bright parts bloom: 0 is the runtime alone.",
+				"type": "number",
+				"min": 0,
+				"max": 2,
+				"step": 0.05,
+				"default": 0.3
+			}
+		],
+		"presets": [],
+		"triggers": [
+			{
+				"id": "play",
+				"label": "Play",
+				"hint": "Casts it again where it was last cast."
+			}
+		]
+	},
+	"credits": [
+		{
+			"files": "effekseer.min.js",
+			"license": "MIT",
+			"source": "https://github.com/effekseer/EffekseerForWebGL",
+			"author": "Effekseer Project (web runtime 1.80.8)"
+		},
+		{
+			"files": "effekseer.wasm",
+			"license": "MIT",
+			"source": "https://github.com/effekseer/EffekseerForWebGL",
+			"author": "Effekseer Project (web runtime 1.80.8)"
+		},
+		{
+			"files": "effects/",
+			"license": "CC0-1.0",
+			"source": "https://github.com/effekseer/Effekseer",
+			"author": "Effekseer's sample effects, by Pierre, AndrewFM, NextSoft, tktk, Suzuki, the Effekseer project"
+		},
+		{
+			"files": "floor/",
+			"license": "CC0-1.0",
+			"source": "https://polyhaven.com/a/monastery_stone_floor",
+			"author": "Amal Kumar (Poly Haven)"
+		},
+		{
+			"files": "sky/",
+			"license": "CC0-1.0",
+			"source": "https://polyhaven.com/a/qwantani_dusk_2_puresky",
+			"author": "Poly Haven"
+		},
+		{
+			"files": "assets/",
+			"license": "MIT",
+			"source": "https://github.com/mrdoob/three.js",
+			"author": "The three.js authors; the demo code is Patch, MIT"
+		},
+		{
+			"files": "assets/red-hat-mono-*.woff2",
+			"license": "OFL-1.1",
+			"source": "https://github.com/RedHatOfficial/RedHatFont",
+			"author": "The Red Hat Project Authors (Red Hat Mono)"
+		},
+		{
+			"files": "thumbs/",
+			"license": "CC0-1.0",
+			"source": "https://github.com/effekseer/Effekseer",
+			"author": "Patch (stills of Effekseer's sample effects in this demo)"
+		}
+	]
+}

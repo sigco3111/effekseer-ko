@@ -1,0 +1,13 @@
+Effekseer effects (a block demo on Patch)
+
+Effekseer's web runtime 1.80.8: Effekseer Project, MIT. https://github.com/effekseer/EffekseerForWebGL
+  Licence: LICENSE-effekseer.txt.
+The effects (effects/): Effekseer's sample effects, CC0, from the Sample folder of the official Effekseer 1.80.8 editor
+  release. Thank you to Effekseer and the contributors: Pierre, NextSoft, AndrewFM, Suzuki, tktk and the Effekseer
+  project. Their notice: LICENCE-effects.txt. https://github.com/effekseer/Effekseer
+three.js: MIT, the three.js authors. https://github.com/mrdoob/three.js
+Floor (floor/): Monastery Stone Floor, Amal Kumar, Poly Haven, CC0. https://polyhaven.com/a/monastery_stone_floor
+Sky (sky/): Qwantani Dusk 2 (puresky, 1k), Poly Haven, CC0. https://polyhaven.com/a/qwantani_dusk_2_puresky
+Red Hat Mono (assets/red-hat-mono-*.woff2): The Red Hat Project Authors, SIL Open Font License 1.1: OFL-red-hat-mono.txt.
+The pictures of the effects (thumbs/): stills of this demo, Patch, CC0.
+The block demo page, its look and its wrapper around the runtime: Patch, MIT.

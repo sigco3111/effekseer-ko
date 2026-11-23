@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Effekseer 이펙트 모음</title>
+<link rel="icon" href="data:," />
+<style>
+  @font-face { font-family: 'Red Hat Mono'; font-weight: 500; font-display: swap; src: url('./fonts/red-hat-mono-latin-500-normal.woff2') format('woff2'); }
+  html, body { margin: 0; height: 100%; overflow: hidden; background: #0d0c12; }
+  #view { position: fixed; inset: 0; width: 100%; height: 100%; display: block; touch-action: none; outline: none; cursor: crosshair; visibility: hidden; }
+  .hud { position: fixed; pointer-events: none; font: 500 11px/1 'Red Hat Mono', ui-monospace, 'Cascadia Mono', Consolas, 'Malgun Gothic', 'Apple SD Gothic Neo', monospace;
+    letter-spacing: 0.06em; color: #fafafa; visibility: hidden; }
+  body.on .hud { visibility: visible; }
+  #label { top: 12px; left: 12px; display: flex; align-items: center; gap: 8px; padding: 8px 11px; border-radius: 7px;
+    background: rgba(9, 9, 11, 0.62); border: 1px solid rgba(255, 255, 255, 0.08); transition: border-color 0.3s; }
+  #label .dot { width: 7px; height: 7px; border-radius: 50%; background: #fafafa; box-shadow: 0 0 8px #fafafa; }
+  #label .k { color: #a1a1aa; }
+  #label.hit { border-color: #fafafa; transition: none; }
+  #nogpu { position: fixed; inset: 0; display: none; align-items: center; justify-content: center; padding: 24px; color: #e4e4e7; font: 400 14px/1.5 system-ui, sans-serif; }
+  #nogpu.on { display: flex; }
+
+  /* 한국어판: 단독 배포용 조작 패널 (원작은 patch.gg 블록 페이지가 조작 UI를 제공) */
+  #panel { position: fixed; left: 50%; transform: translateX(-50%); bottom: 10px; width: min(880px, calc(100% - 20px));
+    box-sizing: border-box; background: rgba(9, 9, 11, 0.72); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 10px;
+    padding: 9px 11px 8px; color: #fafafa; visibility: hidden; backdrop-filter: blur(6px);
+    font: 500 11px/1.5 'Red Hat Mono', ui-monospace, 'Cascadia Mono', Consolas, 'Malgun Gothic', 'Apple SD Gothic Neo', monospace; letter-spacing: 0.02em; }
+  body.on #panel { visibility: visible; }
+  #panel .groups { display: flex; gap: 4px; flex-wrap: wrap; margin-bottom: 7px; }
+  #panel .groups button { pointer-events: auto; cursor: pointer; border: 1px solid rgba(255,255,255,0.12); background: transparent;
+    color: #d4d4d8; border-radius: 6px; padding: 3px 8px; font: inherit; }
+  #panel .groups button.on { background: #fafafa; color: #111; border-color: #fafafa; }
+  #panel .effects { display: flex; gap: 7px; overflow-x: auto; padding-bottom: 4px; scrollbar-width: thin; }
+  #panel .effects button { pointer-events: auto; cursor: pointer; flex: 0 0 auto; width: 76px; border: 1px solid rgba(255,255,255,0.10);
+    background: rgba(255,255,255,0.03); border-radius: 7px; padding: 4px 4px 3px; color: #e4e4e7; font: inherit; font-size: 10px; text-align: center; }
+  #panel .effects button.on { border-color: #fafafa; background: rgba(255,255,255,0.10); }
+  #panel .effects img { display: block; width: 66px; height: 44px; object-fit: cover; border-radius: 5px; margin: 0 auto 3px; background: #000; }
+  #panel .rows { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; margin-top: 6px; }
+  #panel .rows label { display: flex; align-items: center; gap: 6px; color: #d4d4d8; }
+  #panel .rows input[type="range"] { pointer-events: auto; width: 110px; accent-color: #fafafa; }
+  #panel .rows input[type="checkbox"] { pointer-events: auto; accent-color: #fafafa; }
+  #panel .rows .val { color: #a1a1aa; min-width: 34px; display: inline-block; }
+  #panel .rows button.replay { pointer-events: auto; cursor: pointer; border: 1px solid rgba(255,255,255,0.12); background: transparent;
+    color: #fafafa; border-radius: 6px; padding: 3px 10px; font: inherit; }
+  #panel .foot { margin-top: 6px; font-size: 10px; color: rgba(250,250,250,0.55); }
+  @media (max-width: 520px) {
+    #panel { bottom: 6px; padding: 7px 8px 6px; }
+    #panel .rows input[type="range"] { width: 84px; }
+  }
+</style>
+</head>
+<body>
+<canvas id="view"></canvas>
+<div id="label" class="hud"><span class="dot"></span><span class="k">이펙트</span><span id="name"></span></div>
+<div id="panel"></div>
+<div id="nogpu"><p>이 데모는 WebGL 2가 필요합니다. 이 브라우저에서는 WebGL 2를 사용할 수 없습니다.</p></div>
+<script src="./effekseer.min.js"></script>
+<script type="module" src="./demo.js"></script>
+</body>
+</html>
